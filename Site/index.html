@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test Web Site</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/adaptation.css">
+        <script src="js/script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="page">
+
+            <!---------- HEADER ---------->
+            <header class="header">
+                <div class="header__content">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__link" href="#">Изображения</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Видео</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">3D модели</a></li>
+                        </ul>
+                    </nav>
+
+                    <button class="header__auth-btn">Войти</button>
+                </div>
+            </header>
+            <!---------- END HEADER ---------->
+
+            <!---------- MAIN ---------->
+            <main class="main">
+                <div class="main__content">
+
+                    <!---------- MODAL WINDOW ---------->
+                    <div class="modal-window">
+                        <dialog class="modal-window__container">
+                            <form class="modal-window__form" method="POST">
+                                <div class="modal-window__top">
+                                    <div class="modal-window__title-wrapper">
+                                        <h1 class="modal-window__title">Оставить заявку</h1>
+                                    </div>
+
+                                    <div class="modal-window__text-wrapper">
+                                        <p class="modal-window__text">Менеджеры перезвонят или напишут в течение дня. Поможем определиться и протестировать продукт. Без спама и навязчивости</p>
+                                    </div>
+                                </div>
+
+                                <div class="modal-window__middle">
+                                    <div class="modal-window__field email-block">
+                                        <input class="modal-window__input email-block__input" id="email" placeholder="" type="email" name="email" required>
+                                        <label class="modal-window__label email-block__label" for="email">Email</label>
+                                    </div>
+
+                                    <div class="modal-window__field fio-block">
+                                        <input class="modal-window__input fio-block__input" id="fio" placeholder="" type="text" name="fio" required>
+                                        <label class="modal-window__label fio-block__label" for="fio">ФИО</label>
+                                    </div>
+
+                                    <div class="modal-window__field phone-block">
+                                        <input class="modal-window__input phone-block__input" id="phone" placeholder="" type="tel" name="phone" required>
+                                        <label class="modal-window__label phone-block__label" for="phone">Телефон</label>
+                                    </div>
+                                </div>
+
+                                <div class="modal-window__bottom">
+                                    <button class="modal-window__btn modal-window__send-btn">Отправить</button>
+
+                                    <div class="user-agreement">
+                                        <div class="user-agreement__checkbox-wrapper">
+                                            <input class="user-agreement__input" id="userAgreement" type="checkbox">
+                                            <label class="user-agreement__label" for="userAgreement"></label>
+                                        </div>
+
+                                        <div class="user-agreement__text-wrapper">
+                                            <p class="user-agreement__text">Я соглашаюсь на обработку персональных данных и присоединяюсь к регламенту СБИС</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <button class="modal-window__btn modal-window__close-btn" id="closeDialog">&#10005</button>
+                        </dialog>
+
+                        <dialog class="message">
+                            <div class="message__container">
+                                <div class="message__title-wrapper">
+                                    <h1 class="message__title">Спасибо за заявку</h1>
+                                </div>
+
+                                <div class="message__text-wrapper">
+                                    <p class="message__text">Наши менеджеры свяжутся с вами в течении 5 минут</p>
+                                </div>
+                            </div>
+
+                            <button class="message__btn message__close-btn" id="closeMessage">&#10005</button>
+                        </dialog>
+                    </div>
+                    <!---------- END MODAL WINDOW ---------->
+
+                    <!---------- SECTION ONE ---------->
+                    <section class="main__section section-one">
+                        <div class="section-one__container">
+                            <img class="section-one__img" src="img/section-one/section-one__1.png" alt="Изображение">
+                        </div>
+
+                        <div class="section-one__content">
+                            <div class="section-one__title-wrapper">
+                                <h1 class="section-one__title">Превратите свои идеи в реальные достижения</h1>
+                            </div>
+
+                            <div class="section-one__description-wrapper">
+                                <p class="section-one__description">Теперь у вас под рукой всегда есть нужные изображения, видео, музыка, 3D-модели, редакционные материалы и авторские продукты.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!---------- END SECTION ONE ---------->
+
+                    <!---------- SECTION TWO ---------->
+                    <section class="main__section section-two">
+                        <div class="section-two__row">
+                            <div class="section-two__col">
+                                <img class="section-two__img section-two__img--one" src="img/section-two/section-two__1.jpg" alt="Изображение">
+                            </div>
+
+                            <div class="section-two__col">
+                                <img class="section-two__img section-two__img--two" src="img/section-two/section-two__2.jpg" alt="Изображение">
+                            </div>
+                        </div>
+
+                        <div class="section-two__row">
+                            <div class="section-two__col">
+                                <img class="section-two__img section-two__img--three" src="img/section-two/section-two__3.jpg" alt="Изображение">
+                            </div>
+
+                            <div class="section-two__col">
+                                <img class="section-two__img section-two__img--four" src="img/section-two/section-two__4.jpg" alt="Изображение">
+                            </div>
+                        </div>
+
+                        <div class="section-two__row">
+                            <div class="section-two__col">
+                                <img class="section-two__img section-two__img--five" src="img/section-two/section-two__5.jpg" alt="Изображение">
+                            </div>
+
+                            <div class="section-two__col">
+                                <img class="section-two__img section-two__img--six" src="img/section-two/section-two__6.jpg" alt="Изображение">
+                            </div>
+                        </div>
+                    </section>
+                    <!---------- END SECTION TWO ---------->
+
+                    <!---------- SECTION THREE ---------->
+                    <section class="main__section section-three">
+                        <div class="section-three__title-wrapper">
+                            <h2 class="section-three__title">Поможем сделать ваш продукт уникальным</h2>
+                        </div>
+
+                        <div class="section-three__content">
+                            <div class="main-video">
+                                <div class="main-video__preview">
+                                    <img class="main-video__img" src="img/section-three/section-three__1.jpg" alt="Изображение">
+                                </div>
+
+                                <button class="main-video__btn">
+                                    <img class="main-video__icon" src="img/section-three/section-three__ico-1.png" alt="Плеер">
+                                </button>
+                            </div>
+
+                            <div class="additional-video">
+                                <div class="additional-video__left">
+                                    <div class="additional-video__container">
+                                        <div class="additional-video__preview">
+                                            <img class="additional-video__img additional-video__img--one" src="img/section-three/section-three__2.jpg" alt="Изображение">
+                                        </div>
+
+                                        <button class="additional-video__btn">
+                                            <img class="additional-video__icon" src="img/section-three/section-three__ico-1.png" alt="Плеер">
+                                        </button>
+                                    </div>
+
+                                    <div class="additional-video__description">
+                                        <div class="additional-video__title-wrapper">
+                                            <h1 class="additional-video__title">Эксклюзив</h1>
+                                        </div>
+
+                                        <div class="additional-video__text-wrapper">
+                                            <p class="additional-video__text">Используйте уникальный контент в своих целях</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="additional-video__right">
+                                    <div class="additional-video__container">
+                                        <div class="additional-video__preview">
+                                            <img class="additional-video__img additional-video__img--two" src="img/section-three/section-three__3.jpg" alt="Изображение">
+                                        </div>
+
+                                        <button class="additional-video__btn">
+                                            <img class="additional-video__icon" src="img/section-three/section-three__ico-1.png" alt="Плеер">
+                                        </button>
+                                    </div>
+
+                                    <div class="additional-video__description">
+                                        <div class="additional-video__title-wrapper">
+                                            <h1 class="additional-video__title">Высокое качество</h1>
+                                        </div>
+
+                                        <div class="additional-video__text-wrapper">
+                                            <p class="additional-video__text">Изображения и видео в высочайшем качестве</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!---------- END SECTION THREE ---------->
+
+                    <!---------- SECTION FOUR ---------->
+                    <section class="main__section section-four">
+                        <div class="section-four__left">
+                            <div class="info-block">
+                                <div class="info-block__title-wrapper">
+                                    <h1 class="info-block__title">Создавайте свои сайты в пару кликов</h1>
+                                </div>
+
+                                <div class="info-block__text-wrapper">
+                                    <p class="info-block__text">Мы создали новый продукт, который поможет дизайнерам, разработчикам и небольшим стартапам создать свой сайт быстро и просто.</p>
+                                </div>
+
+                                <button class="info-block__btn">Подробнее</button>
+                            </div>
+
+                            <div class="technologies">
+                                <div class="technologies__framework">
+                                    <div class="technologies__icon-container">
+                                        <img class="technologies__icon" src="img/section-four/section-four__ico-1.png" alt="Иконка">
+                                    </div>
+
+                                    <div class="technologies__description">
+                                        <div class="technologies__title-wrapper">
+                                            <h1 class="technologies__title">Bootstrap 4</h1>
+                                        </div>
+
+                                        <div class="technologies__text-wrapper">
+                                            <p class="technologies__text">HTML верстка основана на одном из самых распространенных и надежных фреймворков.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="technologies__hypertext-style">
+                                    <div class="technologies__icon-container">
+                                        <img class="technologies__icon" src="img/section-four/section-four__ico-2.png" alt="Иконка">
+                                    </div>
+
+                                    <div class="technologies__description">
+                                        <div class="technologies__title-wrapper">
+                                            <h1 class="technologies__title">HTML5 & CSS3</h1>
+                                        </div>
+
+                                        <div class="technologies__text-wrapper">
+                                            <p class="technologies__text">Для достижения наилучшего результата мы использовали только проверенные временем технологии.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-four__right">
+                            <div class="section-four__img-container">
+                                <img class="section-four__img" src="img/section-four/section-four__1.jpg" alt="Изображение">
+                            </div>
+                        </div>
+                    </section>
+                    <!---------- END SECTION FOUR ---------->
+
+                    <!---------- SECTION FIVE ---------->
+                    <section class="main__section section-five">
+                        <div class="section-five__title-wrapper">
+                            <h1 class="section-five__title">У нас есть два тарифа</h1>
+                        </div>
+
+                        <div class="section-five__choice">
+                            <div class="section-five__text-choice-container section-five__first-choice-container">
+                                <p class="section-five__first-choice">Месяц</p>
+                            </div>
+
+                            <div class="section-five__switcher">
+                                <input class="section-five__switcher-input" id="switcher" type="checkbox">
+                                <label class="section-five__switcher-label" for="switcher"></label>
+                            </div>
+
+                            <div class="section-five__text-choice-container section-five__second-choice-container">
+                                <p class="section-five__second-choice">Год</p>
+                            </div>
+                        </div>
+
+                        <div class="cards">
+                            <div class="cards__left">
+                                <div class="cards__img-container">
+                                    <img class="cards__img" src="img/section-five/section-five__1.jpg" alt="Изображение">
+                                </div>
+
+                                <div class="cards__content">
+                                    <div class="cards__main-block">
+                                        <div class="cards__description">
+                                            <div class="cards__title-wrapper">
+                                                <h1 class="cards__title">Оптимальный</h1>
+                                                <span class="cards__price">500₽</span>
+                                            </div>
+
+                                            <div class="cards__text-wrapper">
+                                                <p class="cards__text">Редактируйте фото и видео в режиме онлайн. Создавайте одностраничные сайты  из готовых компонентов</p>
+                                            </div>
+                                        </div>
+
+                                        <button class="cards__btn cards__btn--one" id="showDialog">Начать бесплатно</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cards__right">
+                                <div class="cards__img-container">
+                                    <img class="cards__img" src="img/section-five/section-five__2.jpg" alt="Изображение">
+                                </div>
+
+                                <div class="cards__content">
+                                    <div class="cards__main-block">
+                                        <div class="cards__description">
+                                            <div class="cards__title-wrapper">
+                                                <h1 class="cards__title">Профи</h1>
+                                                <span class="cards__price">1000₽</span>
+                                            </div>
+
+                                            <div class="cards__text-wrapper">
+                                                <p class="cards__text">Редактируйте фото и видео в режиме онлайн. Создавайте одностраничные и многостраничные сайты  из готовых компонентов,</p>
+                                            </div>
+                                        </div>
+
+                                        <button class="cards__btn cards__btn--two" id="showDialogBg">Начать бесплатно</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!---------- END SECTION FIVE ---------->
+                </div>
+            </main>
+            <!---------- END MAIN ---------->
+        </div>
+    </body>
+</html>
